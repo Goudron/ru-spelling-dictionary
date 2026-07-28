@@ -4,6 +4,15 @@ This repository contains a modern Russian Hunspell dictionary intended for use w
 
 The dictionary is distributed under the Mozilla Public License 2.0 (MPL 2.0).
 
+## Release 1.0.4
+
+Release 1.0.4 contains 550,291 Hunspell entries. It expands contemporary Russian coverage while preserving the existing Hunspell morphology and validation boundaries.
+
+- `ru_RU.aff` SHA-256: `e90dfa0b0ec8f346b350e1d514e2ac2ec7595067fbc9335ebdbcc61c4cb2ae38`
+- `ru_RU.dic` SHA-256: `d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438`
+- Firefox/Thunderbird dictionary XPI: `mozilla-add-on/russian-spelling-dictionary-1.0.4.xpi` (SHA-256 `9db57c47a1ce8911a6e6ae733a1de06ce1732fdbaa58f2a312d4be3d6e2e3e8b`)
+- CSpell word list: 2,342,788 UTF-8 words in `cspell/dictionaries/ru_RU.txt.gz` (SHA-256 `ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2`)
+
 ## Scope
 
 The dictionary focuses on contemporary Russian usage, including general vocabulary, modern technical vocabulary, browser and application user-interface terminology, and words commonly encountered in Russian-language software documentation and online technical writing.
@@ -16,6 +25,8 @@ The word list has been expanded and validated against several real-text sources,
 - `ru_RU.dic` — Russian dictionary word list.
 - `LICENSE` — licensing information and required notices.
 - `README.md` — this file.
+- `mozilla-add-on/` — ready-to-upload Mozilla dictionary add-on XPI.
+- `cspell/` — CSpell package generated from the same Hunspell sources.
 
 ## Encoding
 

@@ -1,4 +1,7 @@
 SET KOI8-R
+REP 2
+REP ир ер
+REP щ з
 
 SFX Z Y 4
 SFX Z   ый   о            [лнртв]ый
@@ -1630,3 +1633,4 @@ SFX A   0    о            в
 SFX A   0    о            ин
 SFX A   0    а            в
 SFX A   0    а            ин
+WORDCHARS .

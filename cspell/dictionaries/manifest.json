@@ -1,20 +1,23 @@
 {
   "package": "ruspell-lab-cspell-ru_RU",
+  "release_version": "1.0.4",
   "milestone": "34",
   "dictionary_name": "ru_RU_project",
   "source_aff": "dictionary/ru_RU.aff",
   "source_dic": "dictionary/ru_RU.dic",
+  "source_aff_sha256": "e90dfa0b0ec8f346b350e1d514e2ac2ec7595067fbc9335ebdbcc61c4cb2ae38",
+  "source_dic_sha256": "d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438",
   "source_encoding": "KOI8-R",
-  "source_dic_declared_entries": 179956,
-  "source_dic_actual_entries": 179956,
+  "source_dic_declared_entries": 550291,
+  "source_dic_actual_entries": 550291,
   "affix_class_count": 25,
   "affix_rule_count": 1581,
-  "generated_unique_words": 1789749,
-  "generated_affix_forms": 1676744,
+  "generated_unique_words": 2342788,
+  "generated_affix_forms": 1874490,
   "wordlist_path": "cspell/dictionaries/ru_RU.txt.gz",
-  "wordlist_raw_utf8_bytes": 41264531,
-  "wordlist_gzip_bytes": 6890403,
-  "wordlist_sha256": "cc44cf0b7ccb358d180c98df8ea1547540cfd55ee13596f590b7e62c4a918808",
+  "wordlist_raw_utf8_bytes": 51916229,
+  "wordlist_gzip_bytes": 9400568,
+  "wordlist_sha256": "ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2",
   "positive_smoke_words": [
     "непосещенный",
     "непосещённый",
@@ -34,103 +37,103 @@
   "top_source_flags": [
     [
       "A",
-      71729
+      78898
     ],
     [
       "L",
-      27935
+      28015
     ],
     [
       "K",
-      17452
+      25085
     ],
     [
       "B",
-      16824
+      17160
     ],
     [
       "J",
-      14808
-    ],
-    [
-      "M",
-      13416
-    ],
-    [
-      "P",
-      13384
+      17105
     ],
     [
       "I",
-      11599
+      13771
+    ],
+    [
+      "M",
+      13454
+    ],
+    [
+      "P",
+      13417
     ],
     [
       "R",
-      11031
+      11087
     ],
     [
       "S",
-      10502
+      11081
     ],
     [
       "H",
-      7803
-    ],
-    [
-      "W",
-      5615
+      8526
     ],
     [
       "F",
-      5497
+      5763
+    ],
+    [
+      "W",
+      5636
     ],
     [
       "U",
-      4137
+      4156
     ],
     [
       "O",
-      3496
+      4133
     ],
     [
       "T",
-      2718
+      2726
     ],
     [
       "D",
-      1748
-    ],
-    [
-      "Q",
-      1507
+      1750
     ],
     [
       "Z",
-      1465
+      1511
+    ],
+    [
+      "Q",
+      1509
     ],
     [
       "Y",
-      1230
+      1236
     ],
     [
       "E",
-      1071
+      1109
     ],
     [
       "X",
-      751
+      757
     ],
     [
       "N",
-      651
+      745
     ],
     [
       "G",
-      298
+      337
     ],
     [
       "V",
-      244
+      257
     ]
   ],
   "manifest_path": "cspell/dictionaries/manifest.json"
