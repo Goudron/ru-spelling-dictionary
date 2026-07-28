@@ -14,7 +14,7 @@ Release 1.0.5 substantially improves correction suggestions while preserving all
 - The user-reported `сабака` → `собака` correction is ranked first in Hunspell, Firefox, and LibreOffice.
 - `ru_RU.aff` SHA-256: `3c77ccd923ebfc686fd7ff7a33c5b42b762634d42e0ecd53081a58f09fc4ab74`
 - `ru_RU.dic` SHA-256: `d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438`
-- Firefox/Thunderbird XPI SHA-256: `12f7e08d73be21e8500cf3adf5e5b0422f55bdc08376956fe4dc2187aa97059e`
+- Firefox/Thunderbird XPI SHA-256: `fb720f2309f8eb7b954fb0e971235132d1c07b05ea759814567701ecb8c3cc25`
 - CSpell word list: 2,342,788 UTF-8 words, SHA-256 `ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2`.
 
 The release changes only Hunspell suggestion directives (`TRY` and `REP`). Direct recognition, dictionary entries, affix morphology, and the generated CSpell word list are unchanged from 1.0.4.
