@@ -2,7 +2,7 @@
 
 This directory contains a CSpell-compatible Russian dictionary generated from the validated ruspell-lab Hunspell package.
 
-Release version: `1.0.4`.
+Release version: `1.0.5`.
 
 ## Contents
 
@@ -30,21 +30,21 @@ If the project already has a CSpell configuration, keep its existing settings an
 
 From the ruspell-lab repository root:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.4 --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.5 --progress-interval 2
 
 For an actual CSpell CLI smoke test, install CSpell in the repository or make it available on `PATH`, then run:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.4 --require-cspell --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.5 --require-cspell --progress-interval 2
 
 If your Node.js version cannot run the latest CSpell release, pin the CLI explicitly, for example:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.4 --cspell-command "npx --yes cspell@9" --require-cspell --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.5 --cspell-command "npx --yes cspell@9" --require-cspell --progress-interval 2
 
 ## Regeneration
 
 The package is generated, not hand-edited:
 
-    python3 scripts/release/build_cspell_dictionary.py --release-version 1.0.4 --progress-interval 2
+    python3 scripts/release/build_cspell_dictionary.py --release-version 1.0.5 --progress-interval 2
 
 ## Build summary
 

@@ -1,11 +1,11 @@
 {
   "package": "ruspell-lab-cspell-ru_RU",
-  "release_version": "1.0.4",
+  "release_version": "1.0.5",
   "milestone": "34",
   "dictionary_name": "ru_RU_project",
   "source_aff": "dictionary/ru_RU.aff",
   "source_dic": "dictionary/ru_RU.dic",
-  "source_aff_sha256": "e90dfa0b0ec8f346b350e1d514e2ac2ec7595067fbc9335ebdbcc61c4cb2ae38",
+  "source_aff_sha256": "3c77ccd923ebfc686fd7ff7a33c5b42b762634d42e0ecd53081a58f09fc4ab74",
   "source_dic_sha256": "d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438",
   "source_encoding": "KOI8-R",
   "source_dic_declared_entries": 550291,

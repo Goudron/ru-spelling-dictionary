@@ -1,78 +1,47 @@
 # Russian Hunspell Dictionary
 
-This repository contains a modern Russian Hunspell dictionary intended for use with Mozilla Firefox, Mozilla Thunderbird, LibreOffice, and other Hunspell-compatible applications.
+This repository contains a modern Russian Hunspell dictionary intended for use with Mozilla Firefox, Mozilla Thunderbird, LibreOffice, CSpell, and other Hunspell-compatible applications.
 
 The dictionary is distributed under the Mozilla Public License 2.0 (MPL 2.0).
 
-## Release 1.0.4
+## Release 1.0.5
 
-Release 1.0.4 contains 550,291 Hunspell entries. It expands contemporary Russian coverage while preserving the existing Hunspell morphology and validation boundaries.
+Release 1.0.5 substantially improves correction suggestions while preserving all 550,291 Hunspell entries and their morphology from 1.0.4.
 
-- `ru_RU.aff` SHA-256: `e90dfa0b0ec8f346b350e1d514e2ac2ec7595067fbc9335ebdbcc61c4cb2ae38`
+- Held-out top-1 correct suggestions: 109 → 146.
+- Held-out top-5 correct suggestions: 165 → 192.
+- Held-out targets found at any rank: 169 → 197.
+- The user-reported `сабака` → `собака` correction is ranked first in Hunspell, Firefox, and LibreOffice.
+- `ru_RU.aff` SHA-256: `3c77ccd923ebfc686fd7ff7a33c5b42b762634d42e0ecd53081a58f09fc4ab74`
 - `ru_RU.dic` SHA-256: `d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438`
-- Firefox/Thunderbird dictionary XPI: `mozilla-add-on/russian-spelling-dictionary-1.0.4.xpi` (SHA-256 `9db57c47a1ce8911a6e6ae733a1de06ce1732fdbaa58f2a312d4be3d6e2e3e8b`)
-- CSpell word list: 2,342,788 UTF-8 words in `cspell/dictionaries/ru_RU.txt.gz` (SHA-256 `ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2`)
+- Firefox/Thunderbird XPI SHA-256: `12f7e08d73be21e8500cf3adf5e5b0422f55bdc08376956fe4dc2187aa97059e`
+- CSpell word list: 2,342,788 UTF-8 words, SHA-256 `ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2`.
 
-## Scope
-
-The dictionary focuses on contemporary Russian usage, including general vocabulary, modern technical vocabulary, browser and application user-interface terminology, and words commonly encountered in Russian-language software documentation and online technical writing.
-
-The word list has been expanded and validated against several real-text sources, including Mozilla Russian localization materials, Habr technical texts, and OpenCorpora. These corpora were used only for evaluation and candidate discovery; the released package contains only the Hunspell dictionary files and public documentation.
+The release changes only Hunspell suggestion directives (`TRY` and `REP`). Direct recognition, dictionary entries, affix morphology, and the generated CSpell word list are unchanged from 1.0.4.
 
 ## Files
 
-- `ru_RU.aff` — Hunspell affix rules.
-- `ru_RU.dic` — Russian dictionary word list.
+- `ru_RU.aff` and `ru_RU.dic` — source Hunspell dictionary.
 - `LICENSE` — licensing information and required notices.
-- `README.md` — this file.
 - `mozilla-add-on/` — ready-to-upload Mozilla dictionary add-on XPI.
 - `cspell/` — CSpell package generated from the same Hunspell sources.
-- `libreoffice-extension/` — source metadata for a LibreOffice/OpenOffice `.oxt` extension.
+- `libreoffice-extension/` — metadata used to build the LibreOffice/OpenOffice OXT.
 
 ## LibreOffice and OpenOffice extension
 
-Build the current LibreOffice/OpenOffice extension locally from the repository
-root:
+Build and validate the extension from the repository root:
 
 ```bash
 scripts/build-libreoffice-oxt.sh
 scripts/validate-libreoffice-oxt.sh
 ```
 
-The generated file is `dist/ru-spelling-dictionary-<version>.oxt`. The package
-registers the spelling dictionary for the `ru-RU` locale and always copies the
-root `ru_RU.aff` and `ru_RU.dic` files during the build; it does not maintain a
-second dictionary copy.
+The generated file is `dist/ru-spelling-dictionary-<version>.oxt`. Install it through LibreOffice Extension Manager or run `unopkg add --force ./dist/ru-spelling-dictionary-<version>.oxt`, then restart LibreOffice.
 
-Install it through LibreOffice with **Tools → Extension Manager → Add**, then
-choose the `.oxt` file. Alternatively, run:
+## Encoding and privacy
 
-```bash
-unopkg add --force ./ru-spelling-dictionary-<version>.oxt
-```
-
-Restart LibreOffice after installation.
-
-## Encoding
-
-The dictionary files use the encoding declared in `ru_RU.aff`. For compatibility with the existing Russian Hunspell ecosystem, `ru_RU.dic` is encoded according to that Hunspell configuration.
-
-In particular, `ru_RU.aff` declares `SET KOI8-R`. Do not arbitrarily recode
-either dictionary file to UTF-8; only the LibreOffice extension XML metadata is
-UTF-8.
+The Hunspell files use `SET KOI8-R`; do not recode them independently. The packages contain dictionary data and metadata only: no executable add-on scripts, permissions, telemetry, analytics, or network access.
 
 ## Licensing
 
-This dictionary is released under the Mozilla Public License 2.0 (MPL 2.0).
-
-Copyright © 2026 Valery Ledovskoy.
-
-This package also preserves the required copyright and attribution notices for earlier Russian Hunspell dictionary work incorporated into the final dictionary. See `LICENSE` for the full license text and notices.
-
-## Intended use
-
-The dictionary is intended as a practical Russian spell-checking dictionary for end users and application vendors. It is suitable for packaging with Mozilla Firefox, Mozilla Thunderbird, LibreOffice, and other software that accepts Hunspell dictionaries under MPL 2.0-compatible licensing terms.
-
-## Notes for maintainers
-
-The released package is intentionally minimal. It does not include development corpora, internal analysis data, candidate review files, or generation logs. Future updates should keep this package focused on the public dictionary artifacts required by downstream applications.
+Copyright © 2026 Valery Ledovskoy. See `LICENSE` for MPL-2.0 terms and preserved upstream notices.
