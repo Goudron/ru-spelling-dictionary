@@ -27,10 +27,39 @@ The word list has been expanded and validated against several real-text sources,
 - `README.md` — this file.
 - `mozilla-add-on/` — ready-to-upload Mozilla dictionary add-on XPI.
 - `cspell/` — CSpell package generated from the same Hunspell sources.
+- `libreoffice-extension/` — source metadata for a LibreOffice/OpenOffice `.oxt` extension.
+
+## LibreOffice and OpenOffice extension
+
+Build the current LibreOffice/OpenOffice extension locally from the repository
+root:
+
+```bash
+scripts/build-libreoffice-oxt.sh
+scripts/validate-libreoffice-oxt.sh
+```
+
+The generated file is `dist/ru-spelling-dictionary-<version>.oxt`. The package
+registers the spelling dictionary for the `ru-RU` locale and always copies the
+root `ru_RU.aff` and `ru_RU.dic` files during the build; it does not maintain a
+second dictionary copy.
+
+Install it through LibreOffice with **Tools → Extension Manager → Add**, then
+choose the `.oxt` file. Alternatively, run:
+
+```bash
+unopkg add --force ./ru-spelling-dictionary-<version>.oxt
+```
+
+Restart LibreOffice after installation.
 
 ## Encoding
 
 The dictionary files use the encoding declared in `ru_RU.aff`. For compatibility with the existing Russian Hunspell ecosystem, `ru_RU.dic` is encoded according to that Hunspell configuration.
+
+In particular, `ru_RU.aff` declares `SET KOI8-R`. Do not arbitrarily recode
+either dictionary file to UTF-8; only the LibreOffice extension XML metadata is
+UTF-8.
 
 ## Licensing
 

@@ -1,0 +1,28 @@
+name: Release dictionary packages
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  libreoffice-oxt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build LibreOffice extension
+        run: scripts/build-libreoffice-oxt.sh "${GITHUB_REF_NAME#v}"
+      - name: Validate LibreOffice extension
+        run: scripts/validate-libreoffice-oxt.sh "${GITHUB_REF_NAME#v}"
+      - name: Publish LibreOffice extension
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          artifact="dist/ru-spelling-dictionary-${GITHUB_REF_NAME#v}.oxt"
+          sha256sum "$artifact" > "$artifact.sha256"
+          gh release upload "$GITHUB_REF_NAME" "$artifact" "$artifact.sha256" --clobber
