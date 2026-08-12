@@ -1,6 +1,6 @@
 {
   "id": "ru-ru-ruspell-lab",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "Russian (ru_RU) project dictionary",
   "description": "CSpell-compatible Russian word-list generated from the ruspell-lab Hunspell package.",
   "readonly": true,

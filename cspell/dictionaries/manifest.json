@@ -1,23 +1,23 @@
 {
   "package": "ruspell-lab-cspell-ru_RU",
-  "release_version": "1.0.5",
+  "release_version": "1.0.6",
   "milestone": "34",
   "dictionary_name": "ru_RU_project",
   "source_aff": "dictionary/ru_RU.aff",
   "source_dic": "dictionary/ru_RU.dic",
   "source_aff_sha256": "3c77ccd923ebfc686fd7ff7a33c5b42b762634d42e0ecd53081a58f09fc4ab74",
-  "source_dic_sha256": "d1b727cd2c059e7ec7850808fe610ae2ca5ea07de768484ac6344aba89947438",
+  "source_dic_sha256": "bda043e46298fd029f2660fa9cd45d3fa6d08bf91bedbff3dac4b9d19cee9fa0",
   "source_encoding": "KOI8-R",
-  "source_dic_declared_entries": 550291,
-  "source_dic_actual_entries": 550291,
+  "source_dic_declared_entries": 550046,
+  "source_dic_actual_entries": 550046,
   "affix_class_count": 25,
   "affix_rule_count": 1581,
-  "generated_unique_words": 2342788,
-  "generated_affix_forms": 1874490,
+  "generated_unique_words": 2341007,
+  "generated_affix_forms": 1872929,
   "wordlist_path": "cspell/dictionaries/ru_RU.txt.gz",
-  "wordlist_raw_utf8_bytes": 51916229,
-  "wordlist_gzip_bytes": 9400568,
-  "wordlist_sha256": "ec026b1bb187e11fb20ac863c8d4c15fb304ec16126c47d9730a8635060083b2",
+  "wordlist_raw_utf8_bytes": 51880374,
+  "wordlist_gzip_bytes": 9394509,
+  "wordlist_sha256": "75de02b45df08e28d36597c274813542fae43d141846722ef23dbee669a4afce",
   "positive_smoke_words": [
     "непосещенный",
     "непосещённый",
@@ -37,7 +37,7 @@
   "top_source_flags": [
     [
       "A",
-      78898
+      78777
     ],
     [
       "L",
@@ -45,7 +45,7 @@
     ],
     [
       "K",
-      25085
+      25080
     ],
     [
       "B",
@@ -57,7 +57,7 @@
     ],
     [
       "I",
-      13771
+      13765
     ],
     [
       "M",
@@ -73,11 +73,11 @@
     ],
     [
       "S",
-      11081
+      11079
     ],
     [
       "H",
-      8526
+      8525
     ],
     [
       "F",
