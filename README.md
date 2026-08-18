@@ -4,21 +4,19 @@ This repository contains a modern Russian Hunspell dictionary for Mozilla,
 LibreOffice, CSpell, and other Hunspell-compatible applications. It is
 distributed under the Mozilla Public License 2.0 (MPL 2.0).
 
-## Release 1.0.6
+## Release 1.0.7
 
-Version 1.0.6 is a narrowly reviewed recognition-quality correction. It
-removes 245 direct or stem entries, so 279 confirmed misspelling surfaces from
-the reviewed issue evidence are rejected. Valid-word/contextual substitutions
-remain outside the word-level dictionary claim.
+Version 1.0.7 is a focused recognition-quality follow-up. It rejects 69
+owner-selected false-accept surfaces from the D107 review. Rows excluded by
+the owner and all `е/ё`-equivalent forms are unchanged.
 
-- D105 held-out suggestion recall at any rank: 197 → 197 of 204.
-- All 6,845 D105 suggestion-regression pairs retain their target at some rank.
-- `ru_RU.aff` SHA-256: `3c77ccd923ebfc686fd7ff7a33c5b42b762634d42e0ecd53081a58f09fc4ab74`
-- `ru_RU.dic` SHA-256: `bda043e46298fd029f2660fa9cd45d3fa6d08bf91bedbff3dac4b9d19cee9fa0`
-- Dictionary entries: 550,046.
-- Firefox/Thunderbird XPI SHA-256: `ea4aee6448292bd77b925901ef5020b49ef03db4f4e2ff3860bbdfddad85f8b5`.
-- CSpell word list: 2,341,007 UTF-8 forms,
-  SHA-256 `75de02b45df08e28d36597c274813542fae43d141846722ef23dbee669a4afce`.
+- All 6,585 protected baseline-accepted D105 regression targets remain accepted.
+- `ru_RU.aff` SHA-256: `e8dc652231a2c0c34b04d9c9acc63f801c20111865f05e57091c3dc81c786136`
+- `ru_RU.dic` SHA-256: `a8c0bff5f6a1e890a8548eeae4adfb1406d3dbb11c2632bb1f190ca281078e38`
+- Dictionary entries: 550,087.
+- Firefox/Thunderbird XPI SHA-256: `f6c1c8977af50a3d524477d73d2ae5b2e8d03817fee4775d0c28877e9886235f`.
+- CSpell word list: 2,340,963 UTF-8 forms,
+  SHA-256 `f84112727988c0da38960d5023b1af20fe613b2d0ac22fab8435575a11da621b`.
 
 ## Files
 

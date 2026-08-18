@@ -2,7 +2,7 @@
 
 This directory contains a CSpell-compatible Russian dictionary generated from the validated ruspell-lab Hunspell package.
 
-Release version: `1.0.6`.
+Release version: `1.0.7`.
 
 ## Contents
 
@@ -30,27 +30,27 @@ If the project already has a CSpell configuration, keep its existing settings an
 
 From the ruspell-lab repository root:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.6 --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.7 --progress-interval 2
 
 For an actual CSpell CLI smoke test, install CSpell in the repository or make it available on `PATH`, then run:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.6 --require-cspell --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.7 --require-cspell --progress-interval 2
 
 If your Node.js version cannot run the latest CSpell release, pin the CLI explicitly, for example:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.6 --cspell-command "npx --yes cspell@9" --require-cspell --progress-interval 2
+    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.7 --cspell-command "npx --yes cspell@9" --require-cspell --progress-interval 2
 
 ## Regeneration
 
 The package is generated, not hand-edited:
 
-    python3 scripts/release/build_cspell_dictionary.py --release-version 1.0.6 --progress-interval 2
+    python3 scripts/release/build_cspell_dictionary.py --release-version 1.0.7 --progress-interval 2
 
 ## Build summary
 
 - Source Hunspell encoding: `KOI8-R`.
-- Source dictionary entries: `550046`.
-- Generated unique CSpell words: `2341007`.
+- Source dictionary entries: `550087`.
+- Generated unique CSpell words: `2340963`.
 - Dictionary file: `dictionaries/ru_RU.txt.gz`.
 
 ## License and provenance
