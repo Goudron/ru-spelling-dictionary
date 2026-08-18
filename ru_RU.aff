@@ -1,9 +1,12 @@
 SET KOI8-R
 TRY оеаитснрвлпмдьяузбычгйшжюхщцфёэъОЕАИТСНРВЛПМДКЬЯУЗБЫЧГЙШЖЮХЩЦФЁЭЪ
-REP 3
+REP 6
 REP ир ер
 REP щ з
 REP са со
+REP бон кон
+REP джос джок
+REP парл парк
 
 SFX Z Y 4
 SFX Z   ый   о            [лнртв]ый
@@ -1635,4 +1638,6 @@ SFX A   0    о            в
 SFX A   0    о            ин
 SFX A   0    а            в
 SFX A   0    а            ин
-WORDCHARS .
+WORDCHARS .-
+NEEDAFFIX !
+FORBIDDENWORD ?
