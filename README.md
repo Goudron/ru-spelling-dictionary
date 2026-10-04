@@ -33,8 +33,8 @@ as [GitHub Release assets for 1.0.9](https://github.com/Goudron/ru-spelling-dict
 - `mozilla-add-on/` — current 1.0.9 Firefox/Thunderbird XPI, matching the
   GitHub Release asset.
 - `cspell/` — CSpell package generated from the same sources.
-- `libreoffice-extension/` — metadata and scripts to build the OXT; the OXT
-  itself is a GitHub Release asset, not a tracked source file.
+- `libreoffice-extension/` — current LibreOffice OXT 1.0.9 with its checksum,
+  plus the metadata and scripts used to build future OXT packages.
 
 The package contains dictionary data and metadata only: no executable add-on
 scripts, permissions, telemetry, analytics, or network access.
