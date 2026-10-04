@@ -30,7 +30,7 @@ as [GitHub Release assets for 1.0.9](https://github.com/Goudron/ru-spelling-dict
 ## Files
 
 - `ru_RU.aff` and `ru_RU.dic` — source Hunspell dictionary.
-- `mozilla-add-on/` — retained 1.0.8 Mozilla XPI; the current XPI is a
+- `mozilla-add-on/` — current 1.0.9 Firefox/Thunderbird XPI, matching the
   GitHub Release asset.
 - `cspell/` — CSpell package generated from the same sources.
 - `libreoffice-extension/` — metadata and scripts to build the OXT; the OXT
