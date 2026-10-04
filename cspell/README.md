@@ -2,13 +2,14 @@
 
 This directory contains a CSpell-compatible Russian dictionary generated from the validated ruspell-lab Hunspell package.
 
-Release version: `1.0.8`.
+Release version: `1.0.9`.
 
 ## Contents
 
 - `cspell.config.yaml` — reusable CSpell configuration fragment.
 - `cspell-ext.json` — CSpell dictionary extension metadata.
-- `dictionaries/ru_RU.txt.gz` — gzipped UTF-8 word list generated from `dictionary/ru_RU.aff` and `dictionary/ru_RU.dic`.
+- `dictionaries/ru_RU.txt.gz` — gzipped UTF-8 word list generated from the
+  repository-root `ru_RU.aff` and `ru_RU.dic`.
 - `dictionaries/manifest.json` — deterministic build manifest with counts and checksums.
 - `smoke/positive.txt` — words that must be accepted.
 - `smoke/negative.txt` — words that must be rejected.
@@ -28,31 +29,31 @@ If the project already has a CSpell configuration, keep its existing settings an
 
 ## How to validate this package
 
-From the ruspell-lab repository root:
+First verify the published word-list checksum against
+`dictionaries/manifest.json`:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.8 --progress-interval 2
+    sha256sum dictionaries/ru_RU.txt.gz
 
-For an actual CSpell CLI smoke test, install CSpell in the repository or make it available on `PATH`, then run:
+For an actual CSpell smoke test from the repository root, run:
 
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.8 --require-cspell --progress-interval 2
+    npx --yes cspell@9 --config cspell/cspell.config.yaml cspell/smoke/positive.txt
 
-If your Node.js version cannot run the latest CSpell release, pin the CLI explicitly, for example:
-
-    python3 scripts/test/validate_cspell_dictionary.py --release-version 1.0.8 --cspell-command "npx --yes cspell@9" --require-cspell --progress-interval 2
+Every word in `smoke/negative.txt` must be reported as an unknown word.
 
 ## Regeneration
 
-The package is generated, not hand-edited:
-
-    python3 scripts/release/build_cspell_dictionary.py --release-version 1.0.8 --progress-interval 2
+The package is generated from the root Hunspell sources in the validated
+ruspell-lab release workspace; it is not hand-edited.
 
 ## Build summary
 
 - Source Hunspell encoding: `KOI8-R`.
-- Source dictionary entries: `575475`.
-- Generated unique CSpell words: `2357415`.
+- Source dictionary entries: `575484`.
+- Generated unique CSpell words: `2367159`.
 - Dictionary file: `dictionaries/ru_RU.txt.gz`.
 
 ## License and provenance
 
-The CSpell package is derived from the ruspell-lab `dictionary/` package and follows the same licensing and provenance boundary documented in `dictionary/LICENSE` and `dictionary/README.md`.
+The CSpell package is derived from this repository's root Hunspell source files
+and follows the same licensing and provenance boundary documented in `LICENSE`
+and `README.md`.
