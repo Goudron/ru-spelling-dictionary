@@ -1,30 +1,30 @@
 {
   "package": "ruspell-lab-cspell-ru_RU",
-  "release_version": "1.0.8",
+  "release_version": "1.0.9",
   "milestone": "34",
   "dictionary_name": "ru_RU_project",
-  "source_aff": "dictionary/ru_RU.aff",
-  "source_dic": "dictionary/ru_RU.dic",
-  "source_aff_sha256": "e8dc652231a2c0c34b04d9c9acc63f801c20111865f05e57091c3dc81c786136",
-  "source_dic_sha256": "b565654f9942fea6c5a7ac0f748e2fb0e33b49eff5f951720d5f7b0350d65b77",
+  "source_aff": "ru_RU.aff",
+  "source_dic": "ru_RU.dic",
+  "source_aff_sha256": "aebb6f2d4f80c38f3ed559b74aa6f178564cd98704f61970168f5436375f8448",
+  "source_dic_sha256": "a76c323b7342de1a2c26f11713603604e4c9a7b7ef45631fab2960f10450fb2d",
   "source_encoding": "KOI8-R",
-  "source_dic_declared_entries": 575475,
-  "source_dic_actual_entries": 575475,
+  "source_dic_declared_entries": 575484,
+  "source_dic_actual_entries": 575484,
   "affix_class_count": 25,
   "affix_rule_count": 1581,
   "forbidden_word_flag": "?",
   "forbidden_source_entries_excluded": 36,
   "need_affix_flag": "!",
   "need_affix_source_bases_excluded": 33,
-  "explicit_exclusion_key_count": 101027,
-  "explicit_excluded_generated_forms": 8936,
-  "explicit_exclusion_file_sha256": "2faab018f0f68426b36df71418a2a8389a4d772001bb6e8ec90ce41e40381a91",
-  "generated_unique_words": 2357415,
-  "generated_affix_forms": 1872929,
+  "explicit_exclusion_key_count": 0,
+  "explicit_excluded_generated_forms": 0,
+  "explicit_exclusion_file_sha256": null,
+  "generated_unique_words": 2367159,
+  "generated_affix_forms": 1873647,
   "wordlist_path": "cspell/dictionaries/ru_RU.txt.gz",
-  "wordlist_raw_utf8_bytes": 52250481,
-  "wordlist_gzip_bytes": 9480516,
-  "wordlist_sha256": "3519d33eb85dc5d3821b9d1af7b33ef723579e72f4633d495d41762a4b7dd2b7",
+  "wordlist_raw_utf8_bytes": 52409985,
+  "wordlist_gzip_bytes": 9512549,
+  "wordlist_sha256": "8ac7fbc26204d437d3e8be8609ba6a6e2a0afae17548cdfa0ff01c13de55e3fa",
   "positive_smoke_words": [
     "непосещенный",
     "непосещённый",
@@ -44,43 +44,43 @@
   "top_source_flags": [
     [
       "A",
-      78777
+      78784
     ],
     [
       "L",
-      28015
+      28023
     ],
     [
       "K",
-      25080
+      25187
     ],
     [
       "B",
-      17160
+      17163
     ],
     [
       "J",
-      17105
+      17007
     ],
     [
       "I",
-      13765
+      13770
     ],
     [
       "M",
-      13454
+      13453
     ],
     [
       "P",
-      13417
-    ],
-    [
-      "R",
-      11087
+      13422
     ],
     [
       "S",
-      11079
+      11111
+    ],
+    [
+      "R",
+      11097
     ],
     [
       "H",
@@ -92,19 +92,19 @@
     ],
     [
       "W",
-      5636
+      5637
     ],
     [
       "U",
-      4156
+      4157
     ],
     [
       "O",
-      4133
+      4137
     ],
     [
       "T",
-      2726
+      2727
     ],
     [
       "D",
@@ -112,23 +112,23 @@
     ],
     [
       "Z",
-      1511
+      1521
     ],
     [
       "Q",
-      1509
+      1511
     ],
     [
       "Y",
-      1236
+      1237
     ],
     [
       "E",
-      1109
+      1125
     ],
     [
       "X",
-      757
+      768
     ],
     [
       "N",
